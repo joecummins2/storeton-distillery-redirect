@@ -1,0 +1,125 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+.section {
+  background-image: url('../images/Storeton-Distillery-Background.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-flow: column;
+  justify-content: center;
+  height: auto;
+  min-height: 100vh;
+  max-height: none;
+  display: flex;
+}
+
+.container {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+  display: flex;
+}
+
+.div-block {
+  grid-column-gap: 21px;
+  grid-row-gap: 21px;
+  color: #fff;
+  text-align: center;
+  flex-flow: column;
+  padding-top: 32px;
+  font-size: 18px;
+  display: flex;
+}
+
+.text-block {
+  max-width: 500px;
+}
+
+.div-block-2 {
+  min-width: 1200px;
+  padding-bottom: 96px;
+  position: relative;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.bold-text {
+  color: #f3a200;
+  border-bottom: 1px solid #f3a200;
+}
+
+.text-span, .link {
+  color: #f3a200;
+}
+
+.text-block-2 {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .div-block-2 {
+    min-width: 0;
+  }
+
+  .image {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    background-image: none;
+    height: auto;
+    max-height: none;
+    margin-top: -60px;
+    padding-top: 0;
+  }
+
+  .body {
+    background-image: url('../images/Storeton-Distillery-Background.jpg');
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  .container {
+    margin-top: 0;
+  }
+
+  .div-block {
+    max-width: 260px;
+  }
+
+  .div-block-2 {
+    min-width: 0;
+    padding: 40px 21px 0;
+    position: relative;
+  }
+}
